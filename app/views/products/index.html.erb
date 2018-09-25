@@ -16,7 +16,7 @@
     <td> <%= product.price %> </td>
     <td>
       <%= link_to "Update", edit_product_path(product) %>
-      <%= link_to "Delete" %>
+      <%= link_to "Delete", product, method: :delete, data: {confirm: "¿Deseas eliminar este artículo?"} %>
     </td>
   </tr>
 <% end %>
