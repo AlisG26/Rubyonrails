@@ -15,8 +15,7 @@
     <td> <%= product.description %> </td>
     <td> <%= product.price %> </td>
     <td>
-      <%= link_to "Show" %>
-      <%= link_to "Update" %>
+      <%= link_to "Update", edit_product_path(product) %>
       <%= link_to "Delete" %>
     </td>
   </tr>
