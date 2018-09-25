@@ -1,0 +1,25 @@
+<h1> Product List </h1>
+<table>
+<tbody>
+<thead>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+</thead>
+</tbody>
+
+</tbody>
+<% @products.each do |product| %>
+  <tr>
+    <td> <%= product.name %> </td>
+    <td> <%= product.description %> </td>
+    <td> <%= product.price %> </td>
+    <td>
+      <%= link_to "Show" %>
+      <%= link_to "Update" %>
+      <%= link_to "Delete" %>
+    </td>
+  </tr>
+<% end %>
+
+</table>
